@@ -1,0 +1,59 @@
+{
+   "sites":[
+      {
+         "name" : "Telegram",
+         "check_uri" : "https://t.me/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "tgme_page_photo_image",
+         "account_missing_string" : " <meta name=\"robots\" content=\"noindex, nofollow\">",
+         "account_missing_code" : "200",
+         "known_accounts" : ["alice","giovanni"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "X",
+         "check_uri" : "https://x.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "| X</title>",
+         "account_missing_string" : "Sorry, that page doesn't exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["WebBreacher","osintninja"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Patreon",
+         "check_uri" : "https://www.patreon.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Become a patron of",
+         "account_missing_string" : "Oh no! Looks like you got lost.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["mubix","doughboys"],
+         "category" : "finance",
+         "valid" : true
+      },
+      {
+         "name" : "Instagram",
+         "check_uri" : "https://www.instagram.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " Following, ",
+         "account_missing_string" : "Page Not Found ",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "barackobama"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "reddit",
+         "check_uri" : "https://www.reddit.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Cake day",
+         "account_missing_string" : "Sorry, nobody on Reddit goes by that name.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["mayorpaco", "leafstar2"],
+         "category" : "news",
+         "valid" : true
+      }
+]
+}
